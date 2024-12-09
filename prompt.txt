@@ -3,8 +3,10 @@
 - Respect the language of the transcript
 - The output must MARKDOWN text only, in source mode. So I can use it inside Obsidian
 - Use the timestamps in my benefit, rendering it with the [timestamp](link=to-timestamp) syntax. Rembember that the timestamp on the video is represented on the final of the link with this syntax `&t=time-in-seconds`, for example a 4 minute timestamp should be [00:04:00](youtube-link/vide-id&t=240)
+- Suggest a file title compatible with Obsidian between double quotes, formatting it to remove any of these special characters: /,$,:,*,?,",<,>,|,(),#,^
 
 Here is the youtube link: {{link}}
+Here is the youtube video title: {{title}}
 
 You must fill this template from a markdown file inside Obsidian:
 
@@ -17,11 +19,13 @@ link: fill with the youtube link
 Fill with the summary content in markdown format
 ```
 
-The OUTPUT must be the template filled, nothing more nothing less.
+The OUTPUT must be the suggested title and the template filled, nothing more nothing less.
 
 Example of output (ignore the ====, it's only to separate the example from the rest of the prompt):
 
 ====
+Suggested Title: "CS50x 2024 - Lecture 0 - Scratch"
+```md
 ---
 class: "[[Video]]"
 link: https://youtu.be/3LPJfIKxwWc?si=GfhR6YnzWXrst2SH
@@ -43,4 +47,5 @@ This lecture introduces the core concepts of computer science and programming, s
 * **Representing Letters (ASCII and Unicode):** Introduces ASCII (American Standard Code for Information Interchange) as a way to represent letters with numbers and its limitations, then presents Unicode as a more comprehensive system to accommodate diverse languages and symbols, including emojis ([00:28:07](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=1687), [00:29:48](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=1788), [00:38:29](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2309)).
 * **Representing Colors (RGB):** Explains how colors are represented using RGB values (red, green, blue), each ranging from 0 to 255, and the concept of pixels ([00:46:10](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2770)).
 * **Representing Media:** Briefly touches upon the representation of images, music, and videos using the concepts discussed ([00:49:51](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2991)).
+```
 ====
