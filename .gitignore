@@ -1,0 +1,7 @@
+# DEFAULT FILES/FOLDERS THAT DONT GO TO GIT
+venv/
+.env
+
+# CUSTOM FILES/FOLDERS PROJECT SPECIFIC
+Transcripts/**
+Summaries/**

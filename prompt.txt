@@ -1,0 +1,46 @@
+- Provide a concise and comprehensive summary of the following transcript
+- Highlight the key points, main arguments, and important insights
+- Respect the language of the transcript
+- The output must MARKDOWN text only, in source mode. So I can use it inside Obsidian
+- Use the timestamps in my benefit, rendering it with the [timestamp](link=to-timestamp) syntax. Rembember that the timestamp on the video is represented on the final of the link with this syntax `&t=time-in-seconds`, for example a 4 minute timestamp should be [00:04:00](youtube-link/vide-id&t=240)
+
+Here is the youtube link: {{link}}
+
+You must fill this template from a markdown file inside Obsidian:
+
+```md
+---
+class: "[[Video]]"
+link: fill with the youtube link
+---
+
+Fill with the summary content in markdown format
+```
+
+The OUTPUT must be the template filled, nothing more nothing less.
+
+Example of output (ignore the ====, it's only to separate the example from the rest of the prompt):
+
+====
+---
+class: "[[Video]]"
+link: https://youtu.be/3LPJfIKxwWc?si=GfhR6YnzWXrst2SH
+---
+## CS50: Introduction to Computer Science - Week 0
+
+This lecture introduces the core concepts of computer science and programming, starting from the very basics of representing information. You can watch the full lecture here: [Introduction to Computer Science](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf)
+
+## Introduction & Course Overview ([00:00:00 - 00:13:22](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=0))
+
+* Introduces the course, CS50, and its instructors.
+* Emphasizes the broad applicability of computer science principles.
+* Highlights the course's community and culture, including social events like lunches, Puzzle Day, Hackathon, and the CS50 Fair.
+
+## Representing Information ([00:13:22 - 00:49:51](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=802))
+
+* **Unary and Binary:** Explains different number systems, starting with unary (counting on fingers) and moving to binary (base-2), the foundation of computer representation ([00:13:22](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=802)).
+* **Bits and Bytes:** Defines bits (binary digits) and bytes (8 bits) as fundamental units of information ([00:16:10](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=970), [00:26:12](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=1572)).
+* **Representing Letters (ASCII and Unicode):** Introduces ASCII (American Standard Code for Information Interchange) as a way to represent letters with numbers and its limitations, then presents Unicode as a more comprehensive system to accommodate diverse languages and symbols, including emojis ([00:28:07](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=1687), [00:29:48](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=1788), [00:38:29](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2309)).
+* **Representing Colors (RGB):** Explains how colors are represented using RGB values (red, green, blue), each ranging from 0 to 255, and the concept of pixels ([00:46:10](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2770)).
+* **Representing Media:** Briefly touches upon the representation of images, music, and videos using the concepts discussed ([00:49:51](https://youtu.be/3LPJfIKxwWc?si=qUlJ6CAKRkQu6Ajf&t=2991)).
+====
